@@ -1,25 +1,25 @@
 # RelayOps
 
-A planned local-first incident investigation and recovery lab, developed as an engineering portfolio project.
+RelayOps is a planned incident response lab that runs locally. The goal is to detect failures in test services, collect evidence, and support recovery after human approval. It is an engineering portfolio project.
 
 ## Current status
 
-Planning and architecture review. Application features, infrastructure, and evaluation results have not been implemented or demonstrated.
+The project is in planning and architecture review. This repository contains documentation; there is no working application, deployed infrastructure, or evaluation results yet.
 
-The intended first slice detects a controlled outage in an isolated test service and records a persistent incident. Optional evidence-grounded AI investigation and human-approved recovery are later milestones.
+The first milestone is to stop an isolated test service, detect the outage, and save an incident that survives a restart. AI investigation using collected evidence and recovery after human approval come later.
 
 ## Constraints
 
-- Zero additional mandatory spending.
-- Disposable lab assets only; real workstation and home-network administration are outside scope.
-- Detection and incident management remain useful without AI.
-- Recovery actions require independent policy checks and explicit human approval.
-- Implementation begins after architecture review and authorization of a bounded slice.
+- Run on existing hardware without mandatory paid services.
+- Limit faults and recovery actions to disposable lab assets. Leave the workstation and home network alone.
+- Keep detection and incident management usable with AI disabled.
+- Require independent policy checks and explicit human approval for recovery actions.
+- Complete architecture review and agree on a specific scope before writing application code.
 
 ## Design workflow
 
-Use Impeccable for agent-led design planning and verification. See [the design workflow](docs/handoff/DESIGN_WORKFLOW.md).
+Use Impeccable to plan and check the interface. See [the design workflow](docs/handoff/DESIGN_WORKFLOW.md).
 
 ## Project tracking
 
-Use this repository's GitHub Issues for project work. Agent workflow configuration is being set up.
+Track work in this repository's GitHub Issues. Agent workflow configuration is still being set up.
